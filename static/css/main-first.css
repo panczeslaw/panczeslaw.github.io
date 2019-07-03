@@ -1,0 +1,138 @@
+.cover-1 {
+  min-height: 100vh;
+  background-image: url(../img/cover1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.my-nick {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.my-desc {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.container {
+  z-index: 10;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+@media (max-width: 575px) {
+  .my-nick {
+    font-size: 2.5rem;
+  }
+
+  .my-desc {
+    font-size: 1.25rem;
+  }
+
+}
+
+.sidenav-toggler {
+  position: fixed;
+  z-index: 9999;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.25rem;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+}
+
+
+.bar1, .bar2, .bar3 {
+  width: 1.25rem;
+  height: 0.12rem;
+  background-color: #fff;
+  transition: 0.3s;
+  margin-top: 0.32rem;
+  margin-bottom: 0.32rem;
+}
+
+.bar2 {
+  transition: 0.15s;
+}
+
+
+.change .bar1 {
+  -webkit-transform: rotate(45deg) translate(5px, 5px) ;
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(-45deg) translate(5px, -5px) ;
+  transform: rotate(-45deg) translate(5px, -5px) ;
+}
+
+.btn-dark:not(:disabled):not(.disabled):active {
+  background-color: #343a40;
+
+}
+.btn-dark:hover {
+  background-color: #343a40;
+}
+.btn-dark:focus {
+  box-shadow: none;
+}
+.btn-dark:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  background-color: #343a40;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 4rem; 
+}
+
+.nav-drop {
+  padding-left: 1rem;
+}
+
+.nav-link, .nav-droplink {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.5s;
+}
+
+.nav-link:active {
+  margin-left: -1rem;
+  background-color: #6c757d;
+}
+
+.nav-link.active {
+  margin-left: -1rem;
+  background-color: #6c757d;
+}
+
+.nav-link:hover, .nav-droplink:hover {
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+}
+.nav-link:hover {
+  margin-left: -1rem;
+}

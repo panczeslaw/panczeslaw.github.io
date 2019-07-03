@@ -1,0 +1,307 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+.cover-1, .cover-2, .cover-3, .cover-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+
+.cover-1 {
+  min-height: 100vh;
+  background-image: url(../img/cover1.jpg);
+}
+
+
+.my-nick {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.my-desc {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.container {
+  z-index: 10;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.heading-light {
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.heading-dark {
+  color: black;
+  padding-bottom: 1rem;
+}
+
+.avatar {
+  width: 7rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cover-2 {
+  background-image: url(../img/cover2.jpg);
+}
+
+.cover-2 .lead {
+  color: white;
+}
+
+.cover-2 h3 {
+  color: white;
+}
+
+.exp-part {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 10rem;
+  vertical-align: middle;
+}
+
+.projectdesc {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cover-3 {
+  background-image: url(../img/cover3.jpg);
+}
+
+.event {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  color: white;
+}
+
+.event::before {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  left: -10px;
+  top: 1.25rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline {
+  padding-left: 1rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 0.25rem;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+}
+
+.cover-4 {
+  background-image: url(../img/cover4.jpg);
+}
+
+.social {
+  color: white;
+  max-width: 3rem;
+  padding: 0.5rem;
+  transition: 0.3s;
+  position: static;
+  vertical-align: middle;
+}
+
+.cover-4 .lead {
+  color: white;
+}
+
+.footer {
+  background-color: #343a40;
+  text-align: center;
+}
+.footer .lead {
+  margin: 0;
+  color: white;
+}
+
+
+
+
+@media (max-width: 575px) {
+  .my-nick {
+    font-size: 2.5rem;
+  }
+
+  .my-desc {
+    font-size: 1.25rem;
+  }
+
+  .lead {
+    font-size: 0.875rem;
+  }
+
+  .heading-light, .heading-dark {
+    font-size: 1.75rem;
+  }
+
+  .exp-part h3 {
+    font-size: 1.25rem;
+  }
+
+  .exp-part {
+    min-height: auto;
+  }
+
+  .projectdesc h3 {
+    font-size: 1.25rem;
+  }
+
+  .event h3 {
+    font-size: 1.25rem;
+  }
+  .comp-name {
+    font-size: 1.25rem;
+  }
+  .comp-logo {
+    width: 50%;
+  }
+  .container {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  .exp-part {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  .img-mockup {
+    width: 50%;
+  }
+}
+
+
+.sidenav-toggler {
+  position: fixed;
+  z-index: 9999;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.25rem;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+}
+
+
+.bar1, .bar2, .bar3 {
+  width: 1.25rem;
+  height: 0.12rem;
+  background-color: #fff;
+  transition: 0.3s;
+  margin-top: 0.32rem;
+  margin-bottom: 0.32rem;
+}
+
+.bar2 {
+  transition: 0.15s;
+}
+
+
+.change .bar1 {
+  -webkit-transform: rotate(45deg) translate(5px, 5px) ;
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(-45deg) translate(5px, -5px) ;
+  transform: rotate(-45deg) translate(5px, -5px) ;
+}
+
+.btn-dark:not(:disabled):not(.disabled):active {
+  background-color: #343a40;
+
+}
+.btn-dark:hover {
+  background-color: #343a40;
+}
+.btn-dark:focus {
+  box-shadow: none;
+}
+.btn-dark:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  background-color: #343a40;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 4rem; 
+}
+
+.nav-drop {
+  padding-left: 1rem;
+}
+
+.nav-link, .nav-droplink {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.5s;
+}
+
+.nav-link:active {
+  margin-left: -1rem;
+  background-color: #6c757d;
+}
+
+.nav-link.active {
+  margin-left: -1rem;
+  background-color: #6c757d;
+}
+
+.nav-link:hover, .nav-droplink:hover {
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+}
+.nav-link:hover {
+  margin-left: -1rem;
+}
+
+.nav-drop {
+  transition: 0.5s;
+}
+
+.white-link {
+  color: white;
+}
+
+.white-link:hover {
+  color: white;
+}

@@ -1,0 +1,157 @@
+/*! CSS Used from: https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css */
+*,::after,::before{box-sizing:border-box;}
+main{display:block;}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff;}
+h1,h3{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:hover{color:#0056b3;text-decoration:underline;}
+img{vertical-align:middle;border-style:none;}
+button{border-radius:0;}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
+button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+button{overflow:visible;}
+button{text-transform:none;}
+button{-webkit-appearance:button;}
+button::-moz-focus-inner{padding:0;border-style:none;}
+h1,h3{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit;}
+h1{font-size:2.5rem;}
+h3{font-size:1.75rem;}
+.lead{font-size:1.25rem;font-weight:300;}
+.img-fluid{max-width:100%;height:auto;}
+.img-thumbnail{padding:.25rem;background-color:#fff;border:1px solid #dee2e6;border-radius:.25rem;max-width:100%;height:auto;}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width:576px){
+.container{max-width:540px;}
+}
+@media (min-width:768px){
+.container{max-width:720px;}
+}
+@media (min-width:992px){
+.container{max-width:960px;}
+}
+@media (min-width:1200px){
+.container{max-width:1140px;}
+}
+.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+.col,.col-md-3,.col-md-6,.col-md-9,.col-sm-3,.col-sm-9{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%;}
+@media (min-width:576px){
+.col-sm-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}
+.col-sm-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}
+}
+@media (min-width:768px){
+.col-md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}
+.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+.col-md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}
+}
+.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+@media screen and (prefers-reduced-motion:reduce){
+.btn{transition:none;}
+}
+.btn:focus,.btn:hover{text-decoration:none;}
+.btn:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25);}
+.btn:disabled{opacity:.65;}
+.btn:not(:disabled):not(.disabled){cursor:pointer;}
+.btn-dark{color:#fff;background-color:#343a40;border-color:#343a40;}
+.btn-dark:hover{color:#fff;background-color:#23272b;border-color:#1d2124;}
+.btn-dark:focus{box-shadow:0 0 0 .2rem rgba(52,58,64,.5);}
+.btn-dark:disabled{color:#fff;background-color:#343a40;border-color:#343a40;}
+.btn-outline-light{color:#f8f9fa;background-color:transparent;background-image:none;border-color:#f8f9fa;}
+.btn-outline-light:hover{color:#212529;background-color:#f8f9fa;border-color:#f8f9fa;}
+.btn-outline-light:focus{box-shadow:0 0 0 .2rem rgba(248,249,250,.5);}
+.btn-outline-light:disabled{color:#f8f9fa;background-color:transparent;}
+.btn-outline-dark{color:#343a40;background-color:transparent;background-image:none;border-color:#343a40;}
+.btn-outline-dark:hover{color:#fff;background-color:#343a40;border-color:#343a40;}
+.btn-outline-dark:focus{box-shadow:0 0 0 .2rem rgba(52,58,64,.5);}
+.btn-outline-dark:disabled{color:#343a40;background-color:transparent;}
+.btn-lg{padding:.5rem 1rem;font-size:1.25rem;line-height:1.5;border-radius:.3rem;}
+.btn-block{display:block;width:100%;}
+.collapse:not(.show){display:none;}
+.nav-link{display:block;padding:.5rem 1rem;}
+.nav-link:focus,.nav-link:hover{text-decoration:none;}
+.rounded-circle{border-radius:50%!important;}
+.align-items-center{-ms-flex-align:center!important;align-items:center!important;}
+.m-0{margin:0!important;}
+.p-1{padding:.25rem!important;}
+.text-nowrap{white-space:nowrap!important;}
+.text-center{text-align:center!important;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+img{page-break-inside:avoid;}
+h3,p{orphans:3;widows:3;}
+h3{page-break-after:avoid;}
+body{min-width:992px!important;}
+.container{min-width:992px!important;}
+}
+/*! CSS Used from: https://vkozlovsk.github.io/static/css/main.css */
+body{font-family:'Roboto', sans-serif;position:relative;}
+.cover-1,.cover-2,.cover-3,.cover-4{background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;display:flex;align-items:center;}
+.cover-1{min-height:100vh;background-image:url(https://vkozlovsk.github.io/static/img/cover1.jpg);}
+.my-nick{font-size:5rem;padding-bottom:1rem;color:white;font-weight:700;}
+.my-desc{font-size:1.5rem;color:white;}
+.container{z-index:10;padding-bottom:3rem;padding-top:3rem;}
+.heading-light{color:white;padding-bottom:1rem;}
+.heading-dark{color:black;padding-bottom:1rem;}
+.avatar{width:7rem;text-align:center;margin-bottom:1rem;}
+.cover-2{background-image:url(https://vkozlovsk.github.io/static/img/cover2.jpg);}
+.cover-2 .lead{color:white;}
+.cover-2 h3{color:white;}
+.exp-part{padding-top:1rem;padding-bottom:1rem;min-height:10rem;vertical-align:middle;}
+.projectdesc{padding-top:1rem;padding-bottom:1rem;}
+.cover-3{background-image:url(https://vkozlovsk.github.io/static/img/cover3.jpg);}
+.event{padding-left:1.5rem;padding-top:1rem;padding-bottom:1rem;position:relative;color:white;}
+.event::before{content:'';position:absolute;width:1.5rem;height:1.5rem;background-color:white;left:-10px;top:1.25rem;border-radius:50%;z-index:1;}
+.timeline{padding-left:1rem;}
+.timeline::before{content:'';position:absolute;width:0.25rem;background-color:white;top:0;bottom:0;}
+.cover-4{background-image:url(https://vkozlovsk.github.io/static/img/cover4.jpg);}
+.social{color:white;max-width:3rem;padding:0.5rem;transition:0.3s;position:static;vertical-align:middle;}
+.cover-4 .lead{color:white;}
+.footer{background-color:#343a40;text-align:center;}
+.footer .lead{margin:0;color:white;}
+@media (max-width: 575px){
+.my-nick{font-size:2.5rem;}
+.my-desc{font-size:1.25rem;}
+.lead{font-size:0.875rem;}
+.heading-light,.heading-dark{font-size:1.75rem;}
+.exp-part h3{font-size:1.25rem;}
+.exp-part{min-height:auto;}
+.projectdesc h3{font-size:1.25rem;}
+.event h3{font-size:1.25rem;}
+.comp-name{font-size:1.25rem;}
+.comp-logo{width:50%;}
+.container{padding-bottom:1.5rem;padding-top:1.5rem;}
+.exp-part{padding-top:0.25rem;padding-bottom:0.25rem;}
+.img-mockup{width:50%;}
+}
+.sidenav-toggler{position:fixed;z-index:9999;top:1rem;left:1rem;font-size:1.25rem;transition:0.5s;border:none;outline:none;}
+.bar1,.bar2,.bar3{width:1.25rem;height:0.12rem;background-color:#fff;transition:0.3s;margin-top:0.32rem;margin-bottom:0.32rem;}
+.bar2{transition:0.15s;}
+.btn-dark:hover{background-color:#343a40;}
+.btn-dark:focus{box-shadow:none;}
+.sidenav{height:100%;width:0;position:fixed;z-index:9998;top:0;left:0;background-color:#343a40;overflow-x:hidden;transition:0.5s;padding-top:4rem;}
+.nav-drop{padding-left:1rem;}
+.nav-link,.nav-droplink{padding-left:1rem;padding-top:0.5rem;padding-bottom:0.5rem;padding-right:1rem;text-decoration:none;color:#fff;display:block;transition:0.5s;}
+.nav-link:active{margin-left:-1rem;background-color:#6c757d;}
+.nav-link.active{margin-left:-1rem;background-color:#6c757d;}
+.nav-link:hover,.nav-droplink:hover{background-color:#6c757d;color:white;text-decoration:none;}
+.nav-link:hover{margin-left:-1rem;}
+.nav-drop{transition:0.5s;}
+.white-link{color:white;}
+.white-link:hover{color:white;}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
