@@ -20,3 +20,7 @@ $('.nav-link').click(function(e){
   }, 1000);
   e.stopPropagation();
 });
+$(document).ready(function(){
+  age = Math.floor((Math.floor(Date.now() / 1000) - 961891200) / 31557600);
+  $("#age-field").val(age);
+});

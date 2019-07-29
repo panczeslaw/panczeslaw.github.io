@@ -1,9 +1,21 @@
+.b-lazy {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+}
+.b-lazy.b-loaded {
+  opacity: 1;
+}
+
+
 body {
   font-family: 'Roboto', sans-serif;
   position: relative;
 }
 
-.cover-1, .cover-2, .cover-3, .cover-4 {
+.cover-100vh, .cover {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,138 +24,33 @@ body {
   align-items: center;
 }
 
-
-.cover-1 {
+.cover-100vh {
   min-height: 100vh;
-  background-image: url(../img/cover1.jpg);
 }
 
 
 .my-nick {
   font-size: 5rem;
-  padding-bottom: 1rem;
-  color: white;
   font-weight: 700;
 }
 
 .my-desc {
   font-size: 1.5rem;
-  color: white;
-}
-
-.container {
-  z-index: 10;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-}
-
-.heading-light {
-  color: white;
-  padding-bottom: 1rem;
-}
-
-.heading-dark {
-  color: black;
-  padding-bottom: 1rem;
-}
-
-.avatar {
-  width: 7rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.cover-2 {
-  background-image: url(../img/cover2.jpg);
-}
-
-.cover-2 .lead {
-  color: white;
-}
-
-.cover-2 h3 {
-  color: white;
 }
 
 .exp-part {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   min-height: 10rem;
   vertical-align: middle;
 }
 
-.projectdesc {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.cover-3 {
-  background-image: url(../img/cover3.jpg);
-}
-
-.event {
-  padding-left: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  position: relative;
-  color: white;
-}
-
-.event::before {
-  content: '';
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: white;
-  left: -10px;
-  top: 1.25rem;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.timeline {
-  padding-left: 1rem;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  width: 0.25rem;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-}
-
-.cover-4 {
-  background-image: url(../img/cover4.jpg);
-}
-
-.social {
-  color: white;
-  max-width: 3rem;
-  padding: 0.5rem;
-  transition: 0.3s;
-  position: static;
-  vertical-align: middle;
-}
-
-.cover-4 .lead {
-  color: white;
-}
-
-.footer {
-  background-color: #343a40;
-  text-align: center;
-}
-.footer .lead {
-  margin: 0;
+a i {
+  font-size: 2.25rem;
   color: white;
 }
 
 
 
-
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .my-nick {
     font-size: 2.5rem;
   }
@@ -156,7 +63,7 @@ body {
     font-size: 0.875rem;
   }
 
-  .heading-light, .heading-dark {
+  h1 {
     font-size: 1.75rem;
   }
 
@@ -168,26 +75,12 @@ body {
     min-height: auto;
   }
 
-  .projectdesc h3 {
+  .projects h3 {
     font-size: 1.25rem;
   }
 
   .event h3 {
     font-size: 1.25rem;
-  }
-  .comp-name {
-    font-size: 1.25rem;
-  }
-  .comp-logo {
-    width: 50%;
-  }
-  .container {
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-  }
-  .exp-part {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
   }
   .img-mockup {
     width: 50%;
